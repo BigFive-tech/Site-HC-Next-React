@@ -1,0 +1,54 @@
+.row-card-item{
+  background-color: #d3e6fd;
+  width: 350px;
+  height: 350px;
+
+  padding: 20px;
+  border-radius: 14px;
+  margin: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.row-card-item:hover{
+  background-color: #4f9cf9;
+}
+
+.row-card-item:hover p{
+  color: white;
+}
+
+.row-card-item p.nome-exame{
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+.row-card-item p.descricao-exame{
+  transition: 0.3s;
+}
+
+.row-card-item img{
+  background-color: #4f9cf9;
+  border-radius: 14px;
+  width: 70px;
+  padding: 9px;
+}
+
+.row-card-item {
+  position: relative;
+}
+
+.row-card-item .play-button {
+  position: absolute;
+  top: 30px; /* Ajuste a posição conforme necessário */
+  right: 30px; /* Ajuste a posição conforme necessário */
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: linear-gradient(to right, #ff8a00, #da1b60);
+  color: white;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+
+}

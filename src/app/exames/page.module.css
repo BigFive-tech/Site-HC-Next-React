@@ -1,0 +1,11 @@
+.exames h3, .exames > p{
+  text-align: center;
+}
+
+.exames .rows-cards{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  /* align-items: stretch; */
+}

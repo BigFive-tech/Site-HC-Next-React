@@ -1,0 +1,52 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: 0px;
+  text-decoration: none;
+  outline: none;
+  font-family: 'Inter', sans-serif;
+}
+body{
+  background-color: #f1f6fc31 ;
+  overflow-x: hidden;
+}
+
+section,footer{
+  padding: 54px 0;
+}
+
+h3{
+  font-size: 50px;
+}
+
+p{
+  color: #0000009c;
+}
+
+.btn{
+  background-color: #4f9cf9;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.1s;
+  text-transform: capitalize;
+}
+
+.btn.animate-btn{
+  animation: animate-outline 1s ease-out infinite;
+}
+
+.btn:hover{
+  background-color: #3580db;
+}
+
+@keyframes animate-outline {
+  from{
+      outline: 0px solid #4f9cf9;
+  }
+  to{
+      outline: 15px solid #4f9bf900;
+  } 
+}

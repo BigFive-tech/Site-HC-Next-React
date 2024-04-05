@@ -1,0 +1,157 @@
+.contato {
+  padding: 40px 5%;
+}
+
+.contato-info{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.contato-info .left-side{
+  width: 50%;
+  padding: 30px;
+  background-color: #4f9cf9;
+  border-radius: 14px;
+  margin-right: 50px;
+  height: fit-content;
+
+}
+
+.contato-info .left-side div{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+
+}
+.contato-info .left-side div svg{
+  font-size: 24px;
+  margin-right:20px ;
+  color: white;
+}
+
+.contato-info .left-side p{
+  font-size: 17px;
+  color: white;
+}
+
+.contato-info .right-side{
+  width: 50%;
+}
+
+.contato-info .right-side input{
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  height: 47px;
+  padding: 15px;
+  border-radius: 9px;
+  transition: 0.3s;
+  border: 1px solid #f1f1f1;
+  color: #212121;
+  font-weight: lighter;
+}
+
+.contato-info .right-side input:focus,
+.contato-info .right-side textarea:focus{
+  border-color: #4f9cf9;
+}
+
+.contato-info .right-side textarea{
+  border: 1px solid #f1f1f1;
+  color: #212121;
+  border-radius: 9px;
+  margin-bottom: 10px;
+  padding: 15px;
+  width: 100%;
+  transition: 0.3s;
+  resize: none;
+}
+
+.contato-info .right-side button{
+  border: none;
+}
+
+.feedback {
+  position: fixed;
+  top: 50px;
+  left: 0;
+}
+
+.feedback p {
+  color: #fff;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.sucesso {
+  background-color: #40ca70;
+  padding: 23px 0 0 2px;
+  width: 28vw;
+}
+
+
+.sucesso::after {
+  content: '';
+  background-color: #00ff59;
+  animation: animate-width 3s ease-out;
+  display: block;
+  height: 8px;
+  margin-top: 5px;
+  padding: 0;
+}
+
+.erro {
+  background-color: #c23c32;
+  padding: 23px 0 0 2px;
+  width: 28vw;
+}
+
+.erro::after {
+  content: '';
+  background-color: #f71000;
+  animation: animate-width 3s ease-out;
+  display: block;
+  height: 8px;
+  margin-top: 5px;
+  padding: 0;
+}
+
+@keyframes animate-width {
+  from{
+      width: 0%;
+  }
+  to{
+      width: 100%;
+  } 
+}
+
+@media (max-width: 830px) {
+  .contato .contato-info{
+    flex-direction: column-reverse;
+  }
+
+  .contato-info .right-side,
+  .contato-info .left-side{
+    width: 85%;
+  }
+
+  .contato-info .right-side{
+    margin-bottom: 30px;
+  }
+
+  .sucesso, .erro {
+    width: 52vw;
+  }
+
+  .certificados .container img{
+    width: 90px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .sucesso, .erro {
+    width: 75vw;
+  }
+}
