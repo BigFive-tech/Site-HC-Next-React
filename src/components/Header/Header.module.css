@@ -117,13 +117,18 @@
       right: 28px;
   }
 
+  .banner div {
+    margin: 0;
+    padding: 0;
+  }
+
   .banner .banner-text{
     padding: 0;
     margin: 80px;
   }
 
-  .banner .banner-text h1{
-      font-size: 70px;
+  .banner h1{
+      font-size: 56px;
   }
 
   .banner .banner-text p{

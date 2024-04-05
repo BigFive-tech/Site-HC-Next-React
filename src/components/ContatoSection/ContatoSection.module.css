@@ -151,6 +151,10 @@
 }
 
 @media (max-width: 500px) {
+  .contato-info .left-side {
+    width: 75%;
+  }
+
   .sucesso, .erro {
     width: 75vw;
   }
