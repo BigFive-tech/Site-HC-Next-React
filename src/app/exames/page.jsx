@@ -1,10 +1,10 @@
-import Exame from '@/components/Exame/Exame';
 import styles from './page.module.css'
 
-import Header from "@/components/Header/Header";
+import Header from "@/components/PrincipalComponents/Header/Header";
+import Exame from '@/components/PrincipalComponents/Exame/Exame';
+import Footer from '@/components/PrincipalComponents/Footer/Footer';
 
 import { exames } from '@/data/exames';
-import Footer from '@/components/Footer/Footer';
 
 export default function Exames() {
   return (

@@ -1,6 +1,6 @@
-import Header from "@/components/Header/Header";
-import ContatoSection from "@/components/ContatoSection/ContatoSection";
-import Footer from "@/components/Footer/Footer";
+import Header from "@/components/PrincipalComponents/Header/Header";
+import ContatoSection from "@/components/PrincipalComponents/ContatoSection/ContatoSection";
+import Footer from "@/components/PrincipalComponents/Footer/Footer";
 
 export default function Contato() {
   return (

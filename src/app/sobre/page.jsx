@@ -1,9 +1,9 @@
 import styles from './page.module.css'
 
 import Container from "@/components/Container/Container";
-import Header from "@/components/Header/Header";
-import Dados from '@/components/Dados/Dados'
-import Footer from '@/components/Footer/Footer';
+import Header from "@/components/PrincipalComponents/Header/Header";
+import Dados from '@/components/PrincipalComponents/Dados/Dados'
+import Footer from '@/components/PrincipalComponents/Footer/Footer';
 
 import sobreImg from '@/assets/centro referencia.jpg'
 

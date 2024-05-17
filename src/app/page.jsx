@@ -1,9 +1,9 @@
 import Container from "@/components/Container/Container";
 import styles from "./page.module.css";
-import Header from "@/components/Header/Header";
-import Depoimentos from "@/components/Depoimentos/Depoimentos";
-import Certificados from "@/components/Certificados/Certificados";
-import Footer from "@/components/Footer/Footer";
+import Header from "@/components/PrincipalComponents/Header/Header";
+import Depoimentos from "@/components/PrincipalComponents/Depoimentos/Depoimentos";
+import Certificados from "@/components/PrincipalComponents/Certificados/Certificados";
+import Footer from "@/components/PrincipalComponents/Footer/Footer";
 
 import { containersData } from "@/data/containers-home";
 import servicoHumanizadoImg from '@/assets/imagem-servico_humanizado.jpg'
