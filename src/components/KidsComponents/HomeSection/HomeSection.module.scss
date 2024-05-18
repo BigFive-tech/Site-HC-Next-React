@@ -1,0 +1,45 @@
+$font-family: "Baloo Bhai 2", sans-serif;
+
+.section {
+  display: flex;
+  justify-content: space-around;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  article {
+    display: flex;
+    align-items: center;
+    position: relative;
+    div {
+      display: flex;
+      align-items: center;
+      width: 18vw;
+      border-radius: 20px;
+      margin-left: 45px;
+      padding-left: 28px;
+    }
+    p {
+      font-size: 28px;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-family: $font-family;
+      padding: 12px 12px;
+
+    }
+  }
+}
+
+.img {
+  position: absolute;
+  left: 12px;
+  bottom: 10px;
+}
+
+.fundo {
+  position: absolute;
+  left: -6px;
+  width: 80px;
+}

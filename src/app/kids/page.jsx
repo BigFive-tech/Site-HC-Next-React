@@ -1,7 +1,12 @@
-import React from 'react'
-
+import Footer from '@/components/KidsComponents/Footer/Footer'
+import HeaderHome from '@/components/KidsComponents/HeaderHome/HeaderHome'
+import HomeSection from '@/components/KidsComponents/HomeSection/HomeSection'
 export default function Kids() {
   return (
-    <div>Kids</div>
+    <>
+      <HeaderHome />
+      <HomeSection />
+      <Footer />
+    </>
   )
 }
