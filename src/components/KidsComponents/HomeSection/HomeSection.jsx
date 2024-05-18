@@ -1,3 +1,4 @@
+import Arvore from "./Arvore/Arvore";
 import HomeMenuItem from "./HomeMenuItem/HomeMenuItem";
 import styles from './HomeSection.module.scss'
 
@@ -11,7 +12,7 @@ export default function HomeSection() {
         <HomeMenuItem texto='Histórias' img='/paleta-de-cores.png.png' corPrincipal='#F0B23A' corSecundaria="#F0B23A57" bgImg="/fundo_paleta.pmg.png" link='desenhos' />
       </div>
       <div className={styles.right}>
-
+        <Arvore />
       </div>
     </section>
   )
