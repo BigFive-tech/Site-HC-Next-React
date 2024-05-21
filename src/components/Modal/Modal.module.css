@@ -1,19 +1,21 @@
 .modal-item {
   position: fixed;
-  top: 15%;
-  left: 25%;
-  width: 50%;
+  bottom: 2px;
+  top: 25px;
+  left: .5%;
+  width: 99%;
   text-align: center;
   height: auto;
-  border-radius: 15px;
+  border-radius: 15px 15px 0 0;
   box-shadow: 5px 5px 15px #000;
   z-index: 2;
   background-color: #fff;
-  /* padding: 23px; */
+  background-image: url('/galho_roxo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .modal-item__header {
-  background-color: #949494;
   text-align: right;
   padding: 8px;
   border-bottom: 1px solid #000;
@@ -24,10 +26,37 @@
 .modal-item__header span {
   padding-right: 14px;
   cursor: pointer;
+  font-size: 28px;
 }
 
 .modal-item__body {
   padding: 12px;
+  position: relative;
+  height: 100%;
+}
+.modal-item__body iframe {
+  border-radius: 10px;  
+  z-index: 10 ;
+}
+
+.galho {
+  width: 12%;
+  height: 400px;
+  rotate: -90deg;
+  position: absolute;
+  left: -15px;
+  bottom: -40px;
+  z-index: 0;
+}
+
+.galho2 {
+  width: 12%;
+  height: 400px;
+  rotate: -90deg;
+  position: absolute;
+  right: -15px;
+  bottom: -40px;
+  z-index: 1;
 }
 
 .fade {
@@ -44,4 +73,26 @@
 
 .none {
   display: none;
+}
+
+@media (max-width:500px) {
+  .modal-item {
+    top: 25px;
+    bottom: 0px;
+    background-image: url('/galho_roxo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .modal-item__body {
+    height: 100%;   
+  }
+
+  .modal-item__body iframe {
+    margin-bottom: 20px;
+  }
+
+  .galho, .galho2 {
+    display: none;
+  }
 }

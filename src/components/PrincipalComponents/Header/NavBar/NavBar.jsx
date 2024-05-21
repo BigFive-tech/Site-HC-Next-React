@@ -23,6 +23,7 @@ export default function NavBar() {
 
       </Link>
       <ul className={`${styles.ul} ${styles[ulClass]}`}>
+          <Link className={styles['btn-kids']} href='/kids'>Área Kids</Link>
           <Link href="/">Home</Link>
           <Link href="/sobre">Sobre</Link>
           <Link href="/exames">exames</Link>

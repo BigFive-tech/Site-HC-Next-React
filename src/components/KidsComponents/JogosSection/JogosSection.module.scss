@@ -1,0 +1,67 @@
+.section {
+  margin: 12px 3vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 64px;
+  
+  .jogo {
+    box-shadow: 4px 4px 20px #000;
+    border-radius: 10px;
+    width: 450px;
+    height: 100%;
+    transition: 0.2s;
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &:active {
+      transition: 0.4s;
+      transform: scale(0.95);
+    }
+
+    a {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+    }
+
+    img {
+      width: 100%;
+      min-height: 200px;
+      max-height: 200px;
+      height: 200px;
+      flex: 2;
+    }
+
+    p {
+      padding: 32px 0;
+      text-align: center;
+      font-size: 28px;
+      text-transform: uppercase;
+      border-top: 2px solid #000;
+      flex: 1;
+    }
+  }
+
+  .baixo {
+    margin-top: 320px;
+  }
+}
+
+@media (max-width: 500px) {
+  .section {
+    flex-direction: column;
+    margin: 12px 8vw;
+    gap: 120px;
+    .jogo {
+      width: 100%;
+    }
+
+    .baixo {
+      margin-top: 0;
+    }
+  
+  }
+}

@@ -1,0 +1,64 @@
+.section {
+
+  display: flex;
+  margin: 12px 18vw;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  justify-content: space-between;
+
+  div {
+    width: 25%;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    &:active {
+      transition: 0.15s;
+      transform: scale(.95);
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.printContainer {
+  width: 25%;
+  cursor: pointer;
+  .onlyPrint {
+    // display: none;
+  }
+
+  // Estilos para impressão
+  @media print {
+    .onlyPrint {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: auto;
+    }
+    
+    *:not(.onlyPrint) {
+      display: none !important;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .section {
+    flex-direction: column;
+    div {
+      width: 100%;
+    }
+  }
+
+  .printContainer {
+    width: 100%;
+  }
+}

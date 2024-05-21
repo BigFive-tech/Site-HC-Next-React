@@ -9,7 +9,7 @@ export default function HeaderHome() {
           <img src='/lo.PNG' alt="Logo ICR" />      
         </Link>
         <h1>O mundo dos sonhos</h1>
-        <a href='/'>Área Informativa</a>
+        <Link href='/'>Área Informativa</Link>
       </div>
       <img src='/footer_nuvem.svg' alt="Nuvem"  className={styles.nuvem}/>
     </header>
