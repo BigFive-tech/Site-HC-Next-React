@@ -5,19 +5,19 @@ const jogos = [
   {
     nome: 'Jogo da Memória',
     img: '/jogo_memoria.svg',
-    link: '#',
+    link: 'https://bigfivejogomemoria-9iszjmurd-lucasbioris-projects.vercel.app/',
     id: 0
   },
   {
-    nome: 'Caça Palavras',
-    img: '/caca_palavras.svg',
-    link: '#',
+    nome: 'Quiz',
+    img: '/quiz.svg',
+    link: 'https://react-quiz-app-navy-nine.vercel.app/',
     id: 1
   },
   {
     nome: 'Jogo da Velha',
     img: '/jogo_velha.svg',
-    link: '#',
+    link: 'https://jogo-da-velha-react-beta.vercel.app/',
     id: 2
   },
 ]
