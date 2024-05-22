@@ -22,7 +22,7 @@ export default function VideoCard({ img, videoUrl, id }) {
       onExitComplete={() => null}
     >
       <div className={styles.video_card}>
-        {modalClass !== 'none' && <Modal fechaModal={fechaModal} videoUrl={videoUrl} />}
+        {modalClass !== 'none' && <Modal fechaModal={fechaModal} videoUrl={videoUrl} corFundo='#ff8a4b9b' />}
         <img src={img} alt="" onClick={abreModal} className={styles.img}/>
         <button onClick={abreModal}>
           <FaPlayCircle color="rgba(255, 255, 255, 0.839)" size={100}/>

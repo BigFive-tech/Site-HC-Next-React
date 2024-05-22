@@ -9,10 +9,6 @@
   border-radius: 15px 15px 0 0;
   box-shadow: 5px 5px 15px #000;
   z-index: 2;
-  background-color: #fff;
-  background-image: url('/galho_roxo.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .modal-item__header {
@@ -79,9 +75,6 @@
   .modal-item {
     top: 25px;
     bottom: 0px;
-    background-image: url('/galho_roxo.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
   }
 
   .modal-item__body {

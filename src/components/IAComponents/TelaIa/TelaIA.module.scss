@@ -1,0 +1,102 @@
+$font-family: "Baloo Bhai 2", sans-serif;
+
+.none {
+  display: none;
+}
+
+.aside {
+  transition: 0.3s;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 55vw;
+  height: 100vh;
+  .top {
+    background-color: #01080e;
+    padding: 23px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #187b98;
+    span {
+      font-family: $font-family;
+      color: #187b98;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 2rem;
+    }
+
+    svg {
+      cursor: pointer;
+    }
+  }
+
+  .chat {
+    background-color: #101926;
+    height: 65%;
+    border-left: 1px solid #187b98;
+    overflow-y: scroll;
+    padding-bottom: 10px;
+    &::-webkit-scrollbar {
+      width: 12px;               /* width of the entire scrollbar */
+    }
+    
+    &::-webkit-scrollbar-track {
+      background: #101926;        /* color of the tracking area */
+    }
+    
+    &::-webkit-scrollbar-thumb {
+      background-color: #187b98;    /* color of the scroll thumb */
+      border-radius: 20px;       /* roundness of the scroll thumb */
+      border: 3px solid #101926;  /* creates padding around scroll thumb */
+    }
+    p {
+      color: #fff;
+      font-size: 23px;
+      font-family: $font-family;
+      padding: 42px 128px;
+    }
+  }
+
+  .prompt {
+    background-color: #101926;
+    padding: 34px 30px;
+    border: 1px solid #187b98;
+    display: flex;
+    gap: 28px;
+    textarea {
+      font-family: $font-family;
+      width: 75%;
+      border: 1px solid #187b98;
+      border-radius: 25px;
+      background-color: inherit;
+      color: white;
+      padding: 6px 18px;
+      font-size: 21px;
+    }
+
+    button {
+      background-color: transparent;
+      border: none;
+      color: #187b98;
+
+    }
+  }
+}
+@media (max-width: 500px) {
+  .aside {
+    left: 0;
+    right: 0;
+    bottom: 2px;
+    top: 30px;
+
+    .chat {
+      height: 55%;
+
+      p {
+        padding: 36px 21px;
+      }
+    }
+  }
+}

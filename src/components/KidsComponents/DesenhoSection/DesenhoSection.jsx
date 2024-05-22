@@ -17,6 +17,7 @@ export default function DesenhoSection() {
   
   return (
     <section className={styles.section}>
+      <h3>Clique na imagem que deseja imprimir e colorir:</h3>
       {desenhos.map((desenho, index) => (
         <DesenhoCard key={desenho} img={desenho} index={index} />
       ))}

@@ -1,4 +1,4 @@
-import { IoMdCloseCircle } from "react-icons/io";
+import { IoMdClose  } from "react-icons/io";
 import styles from './Modal.module.css'
 import { delay, motion } from "framer-motion";
 
@@ -67,7 +67,7 @@ const video = {
   }
 }
 
-export default function Modal({ fechaModal, videoUrl }) {
+export default function Modal({ fechaModal, videoUrl, corFundo }) {
 
   return(
     <>
@@ -80,10 +80,11 @@ export default function Modal({ fechaModal, videoUrl }) {
         initial="hidden"
         animate="visible"
         exit="exit"
+        style={{backgroundColor: corFundo}}
       >
         <div className={styles["modal-item__header"]}>
             <span className={styles["close-modal"]} onClick={fechaModal}>
-              <IoMdCloseCircle />
+              <IoMdClose />
             </span>
         </div>
         <div className={styles["modal-item__body"]}>
@@ -97,14 +98,6 @@ export default function Modal({ fechaModal, videoUrl }) {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
               allowFullScreen> 
             </motion.iframe>
-            {/* <motion.img 
-              initial='hidden'
-              animate='visible'
-              variants={dropIn}
-              className={styles.galho} 
-              src="/GALHO.png" alt="" 
-            /> */}
-            {/* <img className={styles.galho2} src="/GALHO.png" alt="" /> */}
         </div>
       </motion.div>
     </>

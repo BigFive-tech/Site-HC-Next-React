@@ -16,7 +16,7 @@ export default function NavBar() {
     setUlClass('open')
   }
   return (
-    <nav className={styles}>
+    <nav>
       <ul className={`${styles.ul} ${styles[ulClass]}`}>
         <li>
           <Link href='/kids'>Home</Link>
@@ -28,12 +28,9 @@ export default function NavBar() {
           <Link href='/kids/desenhos'>Desenhos</Link>
         </li>
         <li>
-          <Link href='/kids/videos'>Videos</Link>
-        </li>
-        <li>
           <Link href='/kids/educacao'>Área Educacional</Link>
         </li>
-        <li>
+        <li className={`${styles.ultimo} btn`}>
           <Link href='/'>Área Informativa</Link>
         </li>
         <div className={styles['close-icon']} onClick={closeMenu}>

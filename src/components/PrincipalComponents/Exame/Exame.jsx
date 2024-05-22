@@ -17,7 +17,7 @@ export default function Exame({ path, titulo, texto, videoUrl }) {
 
   return (
     <div className={styles['row-card']}>
-      {modalClass !== 'none' && <Modal fechaModal={fechaModal} videoUrl={videoUrl} />}
+      {modalClass !== 'none' && <Modal fechaModal={fechaModal} videoUrl={videoUrl} corFundo='#4f9bf99b' />}
       <div className={styles["row-card-item"]} onClick={abreModal}>
         <button className={styles["play-button"]}>▶</button>
         <img src={path.src} alt={titulo} />
