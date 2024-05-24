@@ -26,7 +26,26 @@ $font-family: "Baloo Bhai 2", sans-serif;
 .nuvem {
   width: 100%;
 }
-@media (max-width: 500px) {
+
+@media (max-width: 1024px) {
+  .kids_header_home {
+    div {
+      h1 {
+        font-size: 36px;
+      }
+    }
+  }
+}
+
+@media (max-width: 920px) {
+  .kids_header_home {
+    div {
+      padding: 32px 18px 48px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
   .kids_header_home {
     div {
       padding: 32px 16px 12px;
@@ -37,14 +56,31 @@ $font-family: "Baloo Bhai 2", sans-serif;
 
       h1 {
         text-align: center;
-        margin-left: 40px;
+        margin-left: 18vw;
         order: 3;
-        font-size: 42px;
+        font-size: 28px;
         padding: 21px 0;
       }
 
       a:last-of-type {
         order: 2;
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .kids_header_home {
+    div {
+      img {
+        width: 80%;
+      }
+
+      a {
+        font-size: 12px;
+      }
+      h1 {
+        margin-left: 10vw;
       }
     }
   }

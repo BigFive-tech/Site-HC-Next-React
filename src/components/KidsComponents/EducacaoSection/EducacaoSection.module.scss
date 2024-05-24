@@ -33,18 +33,31 @@
       // font-size: 32px;
       cursor: pointer;
       border-radius: 50%;
-      // font-size: 56px;
+      font-size: 100px;
       
     }
   }
 }
 
+@media (max-width: 850px) {
+  .section {
+    .video_card {
+      button {
+        font-size: 56px;
+      }
+    }
+  } 
+}
+
 @media (max-width:500px) {
   .section {
-    flex-direction: column;
+    // flex-direction: column;
 
     .video_card {
       width: 100%;
+      button {
+        font-size: 72px;
+      }
     }
   }
 }

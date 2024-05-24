@@ -25,7 +25,7 @@ export default function VideoCard({ img, videoUrl, id }) {
         {modalClass !== 'none' && <Modal fechaModal={fechaModal} videoUrl={videoUrl} corFundo='#ff8a4b9b' />}
         <img src={img} alt="" onClick={abreModal} className={styles.img}/>
         <button onClick={abreModal}>
-          <FaPlayCircle color="rgba(255, 255, 255, 0.839)" size={100}/>
+          <FaPlayCircle color="rgba(255, 255, 255, 0.839)"/>
         </button>
       </div>
     </AnimatePresence>

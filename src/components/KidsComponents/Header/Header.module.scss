@@ -111,10 +111,40 @@ $font-family: "Baloo Bhai 2", sans-serif;
   // height: 100px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
+  .nav {
+    margin-right: 23.5vw;
+    nav {
+      width: 85%;
+    }
+    .ul {
+      li {
+        a {
+          font-size: 1.05rem;
+        }
+      }
+    }
+  }
+
+  .content {
+    h2 {
+      font-size: 48px;
+    }
+  }
+
+  .img {
+    bottom: 23px;
+  }
+}
+
+@media (max-width: 850px) {
   .nav {
     justify-content: space-between;
     margin-right: 12vw;
+
+    nav {
+      width: auto;
+    }
   }
     .ul{
       position: fixed;
@@ -145,7 +175,8 @@ $font-family: "Baloo Bhai 2", sans-serif;
     }
     
   .content {
-    justify-content: space-around;
+    justify-content: space-center;
+    gap: 26px;
     div {
       margin-left: 0;
     }
@@ -172,4 +203,10 @@ $font-family: "Baloo Bhai 2", sans-serif;
     top: 46px;
     right: 28px;
 }
+}
+
+@media (max-width: 600px) {
+  .content {
+    gap: 12vw;
+  }
 }
